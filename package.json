@@ -1,0 +1,37 @@
+{
+  "name": "@raydeck/domino",
+  "version": "1.0.15",
+  "description": "Simple CLI signal awaiter",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && chmod +x dist/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhdeck/domino.git"
+  },
+  "author": "Ray Deck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhdeck/domino/issues"
+  },
+  "homepage": "https://github.com/rhdeck/domino#readme",
+  "dependencies": {
+    "@types/ms": "^0.7.31",
+    "commander": "^5.1.0",
+    "ms": "^2.1.2"
+  },
+  "devDependencies": {
+    "@raydeck/livelink": "^1.5.2",
+    "@types/node": "^14.0.13",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.5"
+  },
+  "bin": "./dist/bin.js",
+  "liveLink": {
+    "ignoreMasks": [
+      "dist"
+    ]
+  }
+}
