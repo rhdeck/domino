@@ -27,7 +27,6 @@ function wait(signal: string[], logFile = defaultFile, lookback = "0"): void {
     //load contents quickly
     const contents = readFileSync(logFile, { encoding: "utf8" });
     const lines = contents.split("\n");
-    console.log("checking for signs", signal);
     signal.forEach((sign) =>
       lines.some((line) => {
         try {
